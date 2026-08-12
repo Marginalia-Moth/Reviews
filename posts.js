@@ -11,11 +11,10 @@
 */
 
 window.POSTS = [
-  { id: 'b1', platform: 'blog', date: 'Jan 12, 2026', title: 'On Rereading Your Own Drafts at 2 A.M.', excerpt: 'There is a specific hour when your old writing stops looking like yours and starts looking like evidence.', tags: ['writing', 'insomnia'],
+  { id: 'b1', platform: 'blog', date: 'Jan 12, 2026', title: 'Habits you shouldnt attempt', excerpt: 'Otherwise known as no, you shouldnt offer to review 17 books at one time...', tags: ['writing', 'insomnia'],
     body: [
       'There is a specific hour when your old writing stops looking like yours and starts looking like evidence. Midnight it is merely bad. By two it has motive.',
-      "I keep a folder of essays I abandoned at the paragraph where I realized I didn't believe the thesis anymore. Reading it back is less editing than deposition — who wrote this, why did they think this, and were they under the influence of a deadline.",
-      'The honest answer is that most of it was fine. It just wasn\u2019t finished, and unfinished things read like confessions if you catch them at the wrong hour.'
+      "You never want to be under the influence of a deadline."
     ] },
   { id: 'b2', platform: 'blog', date: 'Feb 3, 2026', title: 'The Personal Website Will Outlive Us All (Again)', excerpt: 'Every few years someone declares the personal website dead, and every few years I am still here, updating mine.', tags: ['internet', 'nostalgia'],
     body: [
