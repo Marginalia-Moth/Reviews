@@ -20,7 +20,7 @@ window.POSTS = [
   { id: 's1', platform: 'bluesky', date: 'Jan 30, 2026', title: 'Unpopular opinion: the group chat peaked in 2019', excerpt: 'Unpopular opinion: the group chat peaked in 2019 and we\u2019ve all been performing CPR on it since.', tags: ['humor', 'internet'],
     body: ['Unpopular opinion: the group chat peaked in 2019 and we\u2019ve all been performing CPR on it since.'] },
  
-  { id: 'r2', platform: 'reddit', subreddit: 'r/mildlyinteresting', date: 'Apr 2, 2026', title: 'Found my old Xanga password taped inside a childhood diary', excerpt: 'It still works. I have not logged in. I am afraid of who I was going to be.', tags: ['nostalgia', 'internet'],
+  { id: 'r1', platform: 'reddit', subreddit: 'r/mildlyinteresting', date: 'Apr 2, 2026', title: 'Found my old Xanga password taped inside a childhood diary', excerpt: 'It still works. I have not logged in. I am afraid of who I was going to be.', tags: ['nostalgia', 'internet'],
     body: [
       'Found my old Xanga password taped inside a childhood diary while cleaning out a closet.',
       'It still works, apparently, or worked as of the last time anyone checked in the comments. I have not logged in. There is a fifteen-year-old on the other side of that password and I am not sure either of us is ready to meet.',
