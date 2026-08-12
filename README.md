@@ -16,7 +16,7 @@ python3 -m http.server 8000
 2. Settings → Pages → Build and deployment → Deploy from a branch → `main`, folder `/ (root)`.
 3. The site appears at `https://<username>.github.io/<repo-name>/`.
 
-The `.nojekyll` file must stay — without it GitHub Pages skips the `_ds/` directory, since Jekyll ignores folders whose names begin with an underscore, and the stylesheet won't load.
+The `.nojekyll` file is a safety net. No file or folder in this repo starts with an underscore, so Pages serves everything as-is even if `.nojekyll` gets lost during upload.
 
 ## Adding posts
 
@@ -44,5 +44,6 @@ Tag chips, search, platform sections, and the post count all derive from this ar
 | `index.html` | The whole site: markup, posts, and logic |
 | `support.js` | Runtime that renders the page |
 | `image-slot.js` | Drag-and-drop image placeholder (the About photo) |
-| `_ds/broadsheet-…/` | Broadsheet design system — tokens, component styles, print treatments |
-| `.nojekyll` | Tells GitHub Pages to serve `_ds/` |
+| `ds/styles.css` | Broadsheet design system — tokens and component styles |
+| `ds/ds-bundle.js` | Design system runtime (print separation filters) |
+| `.nojekyll` | Disables Jekyll processing on GitHub Pages |
