@@ -20,28 +20,32 @@ The `.nojekyll` file is a safety net. No file or folder in this repo starts with
 
 ## Adding posts
 
-Posts live in the `POSTS` array inside `index.html`. Each entry:
+All content lives in `posts.js` — you never need to touch `index.html`. Open it on GitHub, click the pencil icon, add an object to the array, and commit. The site rebuilds in about a minute.
 
 ```js
 {
-  id: 'b5',                      // unique
-  platform: 'blog',              // 'blog' | 'bluesky' | 'reddit'
-  subreddit: 'r/writing',        // reddit only
+  id: 'b5',                          // unique across the file
+  platform: 'blog',                  // 'blog' | 'bluesky' | 'reddit'
+  subreddit: 'r/writing',            // reddit only
   date: 'Aug 12, 2026',
-  title: '…',
-  excerpt: '…',                  // shown on the card
-  tags: ['writing'],             // feed the tag filter automatically
-  body: ['paragraph', 'paragraph'] // shown on the post page
+  title: 'A title',
+  excerpt: 'The line shown on the card in the feed.',
+  tags: ['writing', 'internet'],
+  body: [
+    'First paragraph.',
+    'Second paragraph.'
+  ]
 }
 ```
 
-Tag chips, search, platform sections, and the post count all derive from this array — nothing else needs updating.
+Tag chips, search, the platform sections and the post count all derive from this array — nothing else needs updating. Watch the commas: every object except the last needs one after its closing brace. If the page goes blank after an edit, that's almost always a missing or extra comma; the browser console will name the line.
 
 ## Files
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The whole site: markup, posts, and logic |
+| `posts.js` | **Your content** — the archive of posts. This is the only file you edit routinely |
+| `index.html` | The page: markup, layout and logic |
 | `support.js` | Runtime that renders the page |
 | `image-slot.js` | Drag-and-drop image placeholder (the About photo) |
 | `ds/styles.css` | Broadsheet design system — tokens and component styles |
